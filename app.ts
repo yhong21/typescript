@@ -1,4 +1,4 @@
-console.log("It works!");
+console.log("test git!");
 
 //function
 function mutiply(val1: number, val2: number): number{
