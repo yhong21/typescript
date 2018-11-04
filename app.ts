@@ -1,3 +1,6 @@
+/// <reference path="rectangleMath.ts" /> 
+/// <reference path="circleMath.ts" />
+
 console.log("test git!");
 
 //function
@@ -217,6 +220,7 @@ console.log(newProject);
 
 //Private constructors
 //Singleton
+//readonly
 
 class OnlyOne{
     private static instance: OnlyOne;
@@ -236,12 +240,22 @@ class OnlyOne{
 let right = OnlyOne.getInstance();
 console.log(right.name);
 
-//readonly
 
+//Namespace
 
+// namespace MyMath{
+//     const PI = 3.14;
+//     export function calculateRectangle(width:number, length:number){
+//         return width * length;
+//     }
+// }
 
+//put namespace into a seperate file, then reference it on the top
 
+console.log(MyMath.calculateRectangle(10,20));
+console.log(MyMath.Circle.calculateCircumference(5));
 
+import CircleMath = MyMath.Circle;
+console.log(CircleMath.calculateCircumference(5));
 
-
-
+//run > tsc app.ts --outFile build/app.js
