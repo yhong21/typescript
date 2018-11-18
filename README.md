@@ -2,6 +2,18 @@ Install vc code, nodejs, typescript
 npm -g install typescript
 
 
+
+npm install -g typings
+typings install dt~jquery --global --save
+// --global install it for globally for this project, everyfile
+// --save create typings.json
+
+or
+
+npm install --save-dev @types/jquery
+
+
+
 Install systemJS with loading modules
 npm install --save systemjs@lastest
 
