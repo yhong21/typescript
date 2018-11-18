@@ -2,7 +2,6 @@ Install vc code, nodejs, typescript
 npm -g install typescript
 
 
-
 npm install -g typings
 typings install dt~jquery --global --save
 // --global install it for globally for this project, everyfile
@@ -11,6 +10,8 @@ typings install dt~jquery --global --save
 or
 
 npm install --save-dev @types/jquery
+
+
 
 
 
@@ -37,6 +38,10 @@ System.import('my-module').then((myModule) {
 Webpack (used by Angular Cli)
 prepares a single file called bundle.js, which contains all HTML, CSS, JS. The app may take a few seconds to load initially, once loaded and cached it is lightening fast.
 
+npm install --save-dev webpack ts-loader
+
+
 > npm install // to install packages
 > tsc //to complie .ts files
+> tsc -w // auto compile
 > npm start //to run lite-server

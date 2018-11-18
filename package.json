@@ -8,11 +8,17 @@
     "systemjs": "^2.1.1"
   },
   "devDependencies": {
-    "lite-server": "^2.4.0"
+    "lite-server": "^2.4.0",
+    "ts-loader": "^5.3.0",
+    "typescript": "^3.1.6",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "lite-server"
+    "start": "lite-server",
+    "build": "webpack -d --watch",
+    "build:prod": "webpack -p"
   },
   "author": "",
   "license": "ISC"
